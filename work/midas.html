@@ -28,14 +28,14 @@
    <svg width="36" height="36" viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="28" fill="#EAF1FF"/><path d="M86.8 39.1 A34 34 0 1 0 88.8 78.0" fill="none" stroke="#1F5BFF" stroke-width="11" stroke-linecap="round"/><path d="M95.0 30.1 L94.8 49.3 L76.1 44.9 Z" fill="#1F5BFF" stroke="#1F5BFF" stroke-width="2.5" stroke-linejoin="round"/><circle cx="60" cy="60" r="10" fill="#0B1F5C"/></svg>
    DigiClick <span class="pill">AI</span>
   </a>
-  <nav aria-label="Main"><ul><li><a href="../#services">Services</a></li><li><a href="../#work">Work</a></li><li><a href="../#process">Process</a></li><li><a href="../#pricing">Pricing</a></li><li><a href="../#faq">FAQ</a></li></ul></nav>
+  <nav aria-label="Main"><ul><li><a href="../#services">Services</a></li><li><a href="../work/">Work</a></li><li><a href="../#process">Process</a></li><li><a href="../#pricing">Pricing</a></li><li><a href="../#faq">FAQ</a></li></ul></nav>
   <a class="btn" href="../#contact">Start a project</a>
  </div>
 </header>
 <main>
 <section class="case-hero">
  <div class="wrap">
-  <div class="crumb"><a href="../">Home</a> / <a href="../#work">Work</a> / Midas Technical Solutions</div>
+  <div class="crumb"><a href="../">Home</a> / <a href="../work/">Work</a> / Midas Technical Solutions</div>
   <span class="eyebrow"><i></i> Case study · E-commerce & operations</span>
   <h1 style="max-width:900px">A wholesale parts store that keeps itself up to date</h1>
   <p class="lead" style="max-width:760px">Midas Technical Solutions supplies phone-repair parts and devices to repair shops and resellers. We built the storefront and the automation behind it, so catalog, stock, pricing, support and marketplace orders run on schedules instead of spreadsheets.</p>
@@ -64,7 +64,23 @@
   <ol class="steps"><li class="reveal"><h3>Supplier updates</h3><p>The supplier API is read on a schedule for new costs, stock and photos.</p></li><li class="reveal"><h3>Catalog adjusts</h3><p>Prices, stock and images update on the store automatically, within the pricing rules.</p></li><li class="reveal"><h3>Customers buy & ask</h3><p>Shoppers order 24/7; the AI assistant answers common questions instantly.</p></li><li class="reveal"><h3>Team handles exceptions</h3><p>Orders, marketplace sales and anything unusual land on the task board with alerts.</p></li></ol>
  </div>
 </section>
-<section class="alt" style="padding-top:72px;padding-bottom:72px">
+<section class="alt" id="backend">
+ <div class="wrap">
+  <span class="eyebrow reveal"><i></i> Under the hood</span>
+  <h2 class="reveal">The systems behind the storefront</h2>
+  <p class="sub reveal">What customers see is the store. What keeps it running is a set of scheduled jobs, integrations and monitors that work in the background.</p>
+  <div class="arch reveal">
+<div class="layer"><b>Customers</b><div class="chips"><span>Storefront<small>WooCommerce site</small></span><span>Live chat<small>AI agent, 24/7</small></span><span>Marketplaces<small>Walmart listings</small></span></div></div>
+<div class="down"></div>
+<div class="layer hub"><b>Automation</b><div class="chips"><span>Supplier catalog sync<small>cost, stock & photos on a schedule</small></span><span>Workflow engine<small>n8n automations</small></span><span>Order emails<small>branded templates</small></span></div></div>
+<div class="down"></div>
+<div class="layer"><b>Operations</b><div class="chips"><span>Ops hub<small>jobs & claims in Notion</small></span><span>Regional trackers<small>5 regions</small></span><span>24/7 watchdog<small>checks & alerts to team chat</small></span></div></div>
+<div class="down"></div>
+<div class="layer"><b>Data & insight</b><div class="chips"><span>Analytics<small>GA4 & CRM</small></span><span>Daily reports<small>orders & revenue</small></span></div></div>
+</div>
+ </div>
+</section>
+<section style="padding-top:72px;padding-bottom:72px">
  <div class="wrap">
   <div class="stats"><div class="stat reveal"><b>24/7</b><span>storefront, chat and order intake</span></div><div class="stat reveal"><b>Every few hours</b><span>supplier cost, stock and photo sync</span></div><div class="stat reveal"><b>Daily</b><span>marketplace order pulls and health checks</span></div><div class="stat reveal"><b>1</b><span>dashboard for sync status, price changes and errors</span></div></div>
   <h3 class="reveal" style="margin:40px 0 14px">Built with</h3>
@@ -94,7 +110,7 @@
     </div>
    </div>
    <div><h4>Services</h4><ul><li><a href="../#services">Workflow automation</a></li><li><a href="../#services">AI agents &amp; chatbots</a></li><li><a href="../#services">CRM &amp; email systems</a></li><li><a href="../#services">Websites &amp; e-commerce</a></li><li><a href="../#services">SaaS &amp; platforms</a></li><li><a href="../#services">Brand development</a></li></ul></div>
-   <div><h4>Work</h4><ul><li><a href="../work/midas.html">Midas Technical Solutions</a></li><li><a href="../work/nexus.html">Nexus Tech Hub</a></li><li><a href="../#work">All work</a></li></ul></div>
+   <div><h4>Work</h4><ul><li><a href="../work/midas.html">Midas Technical Solutions</a></li><li><a href="../work/nexus.html">Nexus Tech Hub</a></li><li><a href="../work/dare.html">Dare — social challenge app</a></li><li><a href="../work/">All work</a></li></ul></div>
    <div><h4>Company</h4><ul><li><a href="../#process">How we work</a></li><li><a href="../#pricing">Packages</a></li><li><a href="../#about">About</a></li><li><a href="../#faq">FAQ</a></li></ul></div>
    <div><h4>Contact</h4><ul><li><a href="../#contact">Book a discovery call</a></li><li><a href="mailto:digiclickai@gmail.com">digiclickai@gmail.com</a></li><li><a href="https://www.linkedin.com/company/digiclick-ai/" target="_blank" rel="noopener">LinkedIn</a></li><li>Boulder, Colorado · Remote worldwide</li></ul></div>
   </div>

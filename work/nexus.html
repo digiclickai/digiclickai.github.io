@@ -28,14 +28,14 @@
    <svg width="36" height="36" viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="28" fill="#EAF1FF"/><path d="M86.8 39.1 A34 34 0 1 0 88.8 78.0" fill="none" stroke="#1F5BFF" stroke-width="11" stroke-linecap="round"/><path d="M95.0 30.1 L94.8 49.3 L76.1 44.9 Z" fill="#1F5BFF" stroke="#1F5BFF" stroke-width="2.5" stroke-linejoin="round"/><circle cx="60" cy="60" r="10" fill="#0B1F5C"/></svg>
    DigiClick <span class="pill">AI</span>
   </a>
-  <nav aria-label="Main"><ul><li><a href="../#services">Services</a></li><li><a href="../#work">Work</a></li><li><a href="../#process">Process</a></li><li><a href="../#pricing">Pricing</a></li><li><a href="../#faq">FAQ</a></li></ul></nav>
+  <nav aria-label="Main"><ul><li><a href="../#services">Services</a></li><li><a href="../work/">Work</a></li><li><a href="../#process">Process</a></li><li><a href="../#pricing">Pricing</a></li><li><a href="../#faq">FAQ</a></li></ul></nav>
   <a class="btn" href="../#contact">Start a project</a>
  </div>
 </header>
 <main>
 <section class="case-hero">
  <div class="wrap">
-  <div class="crumb"><a href="../">Home</a> / <a href="../#work">Work</a> / Nexus Tech Hub</div>
+  <div class="crumb"><a href="../">Home</a> / <a href="../work/">Work</a> / Nexus Tech Hub</div>
   <span class="eyebrow"><i></i> Case study · SaaS platform</span>
   <h1 style="max-width:900px">From stock list to paid invoice, without the spreadsheet</h1>
   <p class="lead" style="max-width:760px">Nexus Tech Hub is a trade desk for phone and device wholesalers, brokers and refurbishers. We designed and built the full SaaS platform: marketing site, secure app, payments, subscriptions and an AI assistant that answers questions about a business’s own data.</p>
@@ -64,7 +64,23 @@
   <ol class="steps"><li class="reveal"><h3>Upload stock</h3><p>A business adds this week’s stock once.</p></li><li class="reveal"><h3>Share a price list</h3><p>Buyers get a private link with only their prices.</p></li><li class="reveal"><h3>Quote & confirm</h3><p>Quotes become deals with shipping and status tracked.</p></li><li class="reveal"><h3>Get paid</h3><p>The invoice goes out from the same record and is paid by card.</p></li></ol>
  </div>
 </section>
-<section class="alt" style="padding-top:72px;padding-bottom:72px">
+<section class="alt" id="backend">
+ <div class="wrap">
+  <span class="eyebrow reveal"><i></i> Under the hood</span>
+  <h2 class="reveal">How the platform is put together</h2>
+  <p class="sub reveal">A multi-tenant web app where every business's data stays private, money flows straight to the business, and new code ships automatically.</p>
+  <div class="arch reveal">
+<div class="layer"><b>Users</b><div class="chips"><span>Marketing site<small>sign-up & plans</small></span><span>Web app<small>buyer & supplier workspaces</small></span><span>Shared price lists<small>no-login buyer links</small></span></div></div>
+<div class="down"></div>
+<div class="layer hub"><b>Application</b><div class="chips"><span>API & business logic<small>quotes → deals → invoices</small></span><span>AI assistant<small>answers on your own data</small></span><span>Bot protection<small>Cloudflare Turnstile</small></span></div></div>
+<div class="down"></div>
+<div class="layer"><b>Payments</b><div class="chips"><span>Stripe Connect<small>cards paid to each business</small></span><span>Stripe Billing<small>plans, trials, upgrades</small></span></div></div>
+<div class="down"></div>
+<div class="layer"><b>Data & ops</b><div class="chips"><span>PostgreSQL<small>per-workspace data</small></span><span>CI/CD<small>auto-deploy on merge</small></span><span>VPS hosting<small>monitored</small></span></div></div>
+</div>
+ </div>
+</section>
+<section style="padding-top:72px;padding-bottom:72px">
  <div class="wrap">
   <div class="stats"><div class="stat reveal"><b>1 thread</b><span>quote, deal and invoice in one record</span></div><div class="stat reveal"><b>14-day</b><span>free trial built into billing</span></div><div class="stat reveal"><b>Private</b><span>buyer links with no costs or suppliers shown</span></div><div class="stat reveal"><b>Auto</b><span>deploys on every merge to main</span></div></div>
   <h3 class="reveal" style="margin:40px 0 14px">Built with</h3>
@@ -73,7 +89,7 @@
 </section>
 <section>
  <div class="wrap">
-  <a class="next reveal" href="midas.html"><div><small>Next case study</small><h3>Midas Technical Solutions — Wholesale store & automation</h3></div><span class="arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+  <a class="next reveal" href="dare.html"><div><small>Next case study</small><h3>Dare — Social challenge mobile app</h3></div><span class="arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
   <div class="contact reveal" style="margin-top:40px;grid-template-columns:1fr auto">
    <div><h2>Want something like this for your business?</h2><p style="margin:0">Book a free 20-minute discovery call. You'll get a custom quote with a written scope.</p></div>
    <a class="btn" style="background:#fff;color:var(--deep);border-color:#fff" href="../#contact">Book a discovery call</a>
@@ -94,7 +110,7 @@
     </div>
    </div>
    <div><h4>Services</h4><ul><li><a href="../#services">Workflow automation</a></li><li><a href="../#services">AI agents &amp; chatbots</a></li><li><a href="../#services">CRM &amp; email systems</a></li><li><a href="../#services">Websites &amp; e-commerce</a></li><li><a href="../#services">SaaS &amp; platforms</a></li><li><a href="../#services">Brand development</a></li></ul></div>
-   <div><h4>Work</h4><ul><li><a href="../work/midas.html">Midas Technical Solutions</a></li><li><a href="../work/nexus.html">Nexus Tech Hub</a></li><li><a href="../#work">All work</a></li></ul></div>
+   <div><h4>Work</h4><ul><li><a href="../work/midas.html">Midas Technical Solutions</a></li><li><a href="../work/nexus.html">Nexus Tech Hub</a></li><li><a href="../work/dare.html">Dare — social challenge app</a></li><li><a href="../work/">All work</a></li></ul></div>
    <div><h4>Company</h4><ul><li><a href="../#process">How we work</a></li><li><a href="../#pricing">Packages</a></li><li><a href="../#about">About</a></li><li><a href="../#faq">FAQ</a></li></ul></div>
    <div><h4>Contact</h4><ul><li><a href="../#contact">Book a discovery call</a></li><li><a href="mailto:digiclickai@gmail.com">digiclickai@gmail.com</a></li><li><a href="https://www.linkedin.com/company/digiclick-ai/" target="_blank" rel="noopener">LinkedIn</a></li><li>Boulder, Colorado · Remote worldwide</li></ul></div>
   </div>
