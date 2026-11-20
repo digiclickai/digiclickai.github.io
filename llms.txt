@@ -1,0 +1,28 @@
+# DigiClick AI
+
+> DigiClick AI L.L.C. (Boulder, Colorado) designs and builds fixed-price automation, AI agents, websites and custom platforms for small and growing businesses in the US and UAE. Every project has a written scope and a published price, and clients own everything that is built.
+
+## Services
+- Workflow automation: lead intake and follow-ups, order/job/claim tracking, scheduled reports (n8n, Zapier, Make)
+- AI agents and chatbots trained on a business's own knowledge base, with a human in the loop
+- CRM and email systems: HubSpot or Notion CRM setup, branded transactional emails, campaigns
+- Websites and e-commerce: WooCommerce and Shopify stores, supplier and inventory sync, marketplace integrations
+- SaaS and custom platforms: portals, dashboards, APIs, subscriptions and payments
+- Brand and business development: logo and brand kit, LinkedIn and Instagram setup, pricing pages
+
+## Pricing (USD)
+- Automation Audit: $350 one-time (credited toward any build within 30 days)
+- Starter Workflow: from $1,200 (1 workflow, up to 3 tools, 1–2 weeks)
+- Operations System: from $4,500 (3–6 workflows, CRM/dashboard, AI agents, 3–5 weeks)
+- Care Plan: from $450/month (monitoring, fixes, up to 4 hours of changes, cancel any month)
+- Payment: invoice after an approved written scope; builds 50% up front and 50% at sign-off.
+
+## Work
+- Midas Technical Solutions (https://midastechnicalsolutions.com): wholesale phone-repair parts store with supplier API sync, AI live chat and Walmart Marketplace integration
+- Nexus Tech Hub (https://nexustechhubhq.com): B2B trade platform for device wholesalers with payments, subscriptions and an AI assistant
+
+## Contact
+- Website: https://digiclickai.github.io
+- Email: digiclickai@gmail.com
+- LinkedIn: https://www.linkedin.com/company/digiclick-ai/
+- Instagram: https://www.instagram.com/digiclickai/
