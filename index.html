@@ -3,106 +3,192 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DigiClick AI — AI automation for small businesses | Fixed-price workflows</title>
-<meta name="description" content="DigiClick AI builds fixed-price AI automation for small and growing businesses: lead intake, follow-ups, CRM updates, order and claims tracking, reporting. Audits from $350, workflows from $1,200.">
-<meta property="og:title" content="DigiClick AI">
-<meta property="og:description" content="AI automation and business integrations for small and growing businesses.">
+<title>DigiClick AI — Automation, AI agents & platforms for growing businesses</title>
+<meta name="description" content="DigiClick AI builds fixed-price automation, AI agents, websites and platforms for small and growing businesses. Audits from $350, workflows from $1,200. You own everything we build.">
+<meta property="og:title" content="DigiClick AI — Stop doing the work a workflow should do">
+<meta property="og:description" content="Fixed-price automation, AI agents and platforms. Published pricing. You own everything we build.">
+<meta property="og:image" content="https://digiclickai.github.io/profile.png">
+<meta name="theme-color" content="#0B1F5C">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"DigiClick AI L.L.C.","url":"https://digiclickai.github.io/","logo":"https://digiclickai.github.io/profile.png","email":"digiclickai@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Boulder","addressRegion":"CO","addressCountry":"US"},"areaServed":["US","AE"],"sameAs":["https://www.linkedin.com/company/digiclick-ai/","https://www.instagram.com/digiclickai/"],"makesOffer":[{"@type":"Offer","name":"Automation Audit","price":"350","priceCurrency":"USD"},{"@type":"Offer","name":"Starter Workflow","price":"1200","priceCurrency":"USD"},{"@type":"Offer","name":"Operations System","price":"4500","priceCurrency":"USD"},{"@type":"Offer","name":"Care Plan","price":"450","priceCurrency":"USD"}]}</script>
 <style>
-:root{--blue:#1F5BFF;--blue-dark:#1747D6;--light:#EAF1FF;--deep:#0B1F5C;--ink:#0E1A3A;--muted:#475569;--line:#DCE4F5}
+:root{--blue:#1F5BFF;--blue-dark:#1747D6;--sky:#5B8CFF;--light:#EAF1FF;--deep:#0B1F5C;--night:#071338;--ink:#0E1A3A;--muted:#4A5873;--line:#DCE4F5;--r:18px}
 *{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
 a{color:var(--blue-dark)}
-.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
-.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+img,svg{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:Poppins,sans-serif;color:var(--deep);line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,5.4vw,4rem);margin:0 0 20px;letter-spacing:-.02em}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin:0 0 12px}
+h3{font-size:1.12rem;margin:0 0 8px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.85rem;color:var(--blue-dark);background:var(--light);border:1px solid #D3E0FF;border-radius:999px;padding:6px 14px;margin-bottom:18px}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--blue);animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(31,91,255,.45)}80%,100%{box-shadow:0 0 0 10px rgba(31,91,255,0)}}
+.sub{color:var(--muted);max-width:660px;margin:0 0 44px;font-size:1.05rem}
+section{padding:96px 0;position:relative}
+.alt{background:#F6F8FE}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--blue);color:#fff;text-decoration:none;font-weight:600;font-size:1rem;padding:14px 24px;border-radius:12px;min-height:46px;border:2px solid var(--blue);cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{background:var(--blue-dark);border-color:var(--blue-dark);color:#fff;transform:translateY(-2px);box-shadow:0 10px 24px rgba(31,91,255,.28)}
+.btn.ghost{background:#fff;color:var(--blue-dark)}
+.btn.ghost:hover{background:var(--light);color:var(--blue-dark)}
+header{position:sticky;top:0;background:rgba(255,255,255,.88);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;z-index:20;transition:border-color .3s,box-shadow .3s}
+header.scrolled{border-color:var(--line);box-shadow:0 6px 24px rgba(11,31,92,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--deep);font-family:Poppins,sans-serif;font-weight:600;font-size:22px}
 .pill{background:var(--blue);color:#fff;border-radius:8px;padding:0 8px;font-size:15px;line-height:26px}
-nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0}
-nav a{color:var(--ink);text-decoration:none;font-weight:500}
-nav a:hover{color:var(--blue)}
-.btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:600;padding:14px 24px;border-radius:12px;min-height:44px}
-.btn:hover{background:var(--blue-dark);color:#fff}
-.btn.ghost{background:#fff;color:var(--blue-dark);border:2px solid var(--blue)}
-.hero{background:linear-gradient(180deg,var(--light),#fff);padding:96px 0 80px}
-.hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center}
-h1,h2,h3{font-family:Poppins,sans-serif;color:var(--deep);line-height:1.2}
-h1{font-size:clamp(2.2rem,5vw,3.4rem);margin:0 0 20px;letter-spacing:-.5px}
-h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin:0 0 12px}
-h3{font-size:1.15rem;margin:0 0 8px}
-.lead{font-size:1.15rem;color:var(--muted);max-width:560px;margin:0 0 32px}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;position:relative}
+nav a::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;background:var(--blue);transition:width .25s}
+nav a:hover::after{width:100%}
+.hero{padding:84px 0 80px;overflow:hidden;background:radial-gradient(900px 420px at 85% 10%,#DCE7FF 0,transparent 60%),radial-gradient(700px 380px at 0% 100%,#EEF3FF 0,transparent 60%),#fff}
+.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.lead{font-size:1.18rem;color:var(--muted);max-width:560px;margin:0 0 32px}
 .ctas{display:flex;gap:12px;flex-wrap:wrap}
-.hero-mark{display:flex;justify-content:center}
-section{padding:88px 0}
-.sub{color:var(--muted);max-width:640px;margin:0 0 40px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.card{border:1px solid var(--line);border-radius:16px;padding:28px;background:#fff}
-.card p{margin:0;color:var(--muted)}
-.icon{width:44px;height:44px;border-radius:12px;background:var(--light);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-.alt{background:#F6F8FE}
-.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;list-style:none;padding:0;margin:0}
-.steps li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
-.steps li::before{content:counter(s);display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;font-weight:600;align-items:center;justify-content:center;margin-bottom:12px}
-.steps p{margin:0;color:var(--muted)}
-.contact{background:var(--deep);color:#fff;border-radius:24px;padding:56px;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
-.contact h2{color:#fff}
-.contact p{color:#C9D6FF;margin:0;max-width:520px}
-.contact .btn{background:#fff;color:var(--deep)}
-.contact .btn:hover{background:var(--light)}
-footer{padding:40px 0;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
-.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.proof{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px;color:var(--deep);font-weight:600;font-size:.95rem}
+.proof{display:flex;gap:22px;flex-wrap:wrap;margin-top:34px;color:var(--deep);font-weight:600;font-size:.93rem}
 .proof span{display:flex;align-items:center;gap:8px}
-.proof span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue)}
-.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;align-items:stretch}
-.plan{border:1px solid var(--line);border-radius:18px;padding:28px;background:#fff;display:flex;flex-direction:column}
-.plan.feature{border:2px solid var(--blue);box-shadow:0 12px 32px rgba(31,91,255,.12)}
-.tag{display:inline-block;align-self:flex-start;background:var(--light);color:var(--blue-dark);font-weight:600;font-size:.8rem;padding:4px 10px;border-radius:999px;margin-bottom:12px}
-.price{font-family:Poppins,sans-serif;font-size:2rem;color:var(--deep);font-weight:600;margin:4px 0 2px}
-.price{white-space:nowrap}
-.unit{color:var(--muted);font-size:.9rem;font-weight:500;margin:0 0 12px}
-.plan .for{color:var(--muted);margin:0 0 16px;font-size:.95rem}
+.grad{background:linear-gradient(90deg,var(--blue),#5B8CFF 60%,var(--deep));-webkit-background-clip:text;background-clip:text;color:transparent}
+.flow{position:relative;aspect-ratio:1/1;max-width:520px;margin-left:auto;width:100%}
+.flow svg.lines{position:absolute;inset:0;width:100%;height:100%}
+.flow .dash{stroke-dasharray:6 10;animation:dash 1.4s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-32}}
+.node{position:absolute;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:0 14px 34px rgba(11,31,92,.10);display:flex;gap:10px;align-items:center;font-size:.9rem;font-weight:600;color:var(--deep);white-space:nowrap;animation:float 6s ease-in-out infinite}
+.node small{display:block;font-weight:500;color:var(--muted);font-size:.78rem}
+.node .ic{width:34px;height:34px;border-radius:10px;background:var(--light);display:grid;place-items:center;flex:none}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.n1{left:0;top:6%}.n2{right:0;top:18%;animation-delay:-1.5s}.n3{left:4%;bottom:16%;animation-delay:-3s}.n4{right:2%;bottom:4%;animation-delay:-4.5s}
+.core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:150px;height:150px;border-radius:36px;background:linear-gradient(145deg,#fff,var(--light));border:1px solid #D3E0FF;display:grid;place-items:center;box-shadow:0 24px 60px rgba(31,91,255,.22)}
+.core::before{content:"";position:absolute;inset:-14px;border-radius:44px;border:2px dashed #C7D7FF;animation:spin 24s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.core svg{animation:pulse 3.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.status{position:absolute;left:50%;bottom:-6%;transform:translateX(-50%);background:var(--deep);color:#fff;border-radius:999px;padding:8px 16px;font-size:.82rem;font-weight:600;display:flex;gap:8px;align-items:center;white-space:nowrap}
+.status i{width:8px;height:8px;border-radius:50%;background:#7CF0B4}
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;overflow:hidden;padding:18px 0}
+.marquee p{text-align:center;margin:0 0 10px;color:var(--muted);font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.track{display:flex;gap:48px;width:max-content;animation:scroll 38s linear infinite}
+.track span{font-family:Poppins,sans-serif;font-weight:600;color:#8A99BD;font-size:1.05rem;white-space:nowrap}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat{border:1px solid var(--line);border-radius:var(--r);padding:24px;background:#fff}
+.stat b{display:block;font-family:Poppins,sans-serif;font-size:2rem;color:var(--deep);line-height:1.1;margin-bottom:6px}
+.stat span{color:var(--muted);font-size:.93rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid var(--line);border-radius:var(--r);padding:28px;background:#fff;transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(11,31,92,.10);border-color:#C7D7FF}
+.card p{margin:0;color:var(--muted)}
+.card ul{margin:14px 0 0;padding:0;list-style:none;font-size:.92rem}
+.card li{padding:3px 0 3px 18px;position:relative}
+.card li::before{content:"";position:absolute;left:0;top:11px;width:7px;height:7px;border-radius:2px;background:var(--blue)}
+.icon{width:46px;height:46px;border-radius:13px;background:var(--light);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.metric{display:block;font-family:Poppins,sans-serif;color:var(--blue-dark);font-size:.78rem;font-weight:600;margin-bottom:8px;text-transform:uppercase;letter-spacing:.08em}
+.dark{background:linear-gradient(180deg,var(--night),var(--deep));color:#C9D6FF}
+.dark h2,.dark h3{color:#fff}
+.dark .sub{color:#AFC1F2}
+.dark .eyebrow{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.16);color:#fff}
+.work{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.case{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:22px;overflow:hidden;transition:transform .3s,border-color .3s}
+.case:hover{transform:translateY(-4px);border-color:rgba(124,160,255,.6)}
+.shot{background:#0E2470;border-bottom:1px solid rgba(255,255,255,.1);aspect-ratio:16/9;overflow:hidden}
+.shot .bar{height:30px;background:rgba(255,255,255,.07);display:flex;align-items:center;gap:6px;padding:0 12px}
+.shot .bar i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.3)}
+.shot .bar em{margin-left:10px;font-style:normal;font-size:.75rem;color:#AFC1F2;background:rgba(255,255,255,.08);padding:2px 10px;border-radius:6px}
+.shot img{display:block;width:100%;height:calc(100% - 30px);object-fit:cover;object-position:top}
+.case .body{padding:26px}
+.case p{margin:0 0 14px;color:#C9D6FF}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tags span{font-size:.78rem;font-weight:600;color:#fff;background:rgba(91,140,255,.18);border:1px solid rgba(91,140,255,.35);padding:4px 10px;border-radius:999px}
+.case a{color:#fff;font-weight:600;text-decoration:none}
+.case a:hover{text-decoration:underline}
+.ops{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+.op{border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:20px;background:rgba(255,255,255,.03)}
+.op h3{font-size:1rem}
+.op p{margin:0;font-size:.9rem;color:#AFC1F2}
+.op .metric{color:#8FB0FF}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.steps li::before{content:counter(s);display:inline-flex;width:38px;height:38px;border-radius:12px;background:var(--blue);color:#fff;font-weight:700;font-family:Poppins,sans-serif;align-items:center;justify-content:center;margin-bottom:14px}
+.steps p{margin:0;color:var(--muted)}
+.steps small{display:block;margin-top:10px;color:var(--blue-dark);font-weight:600}
+.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-items:stretch}
+.plan{border:1px solid var(--line);border-radius:20px;padding:28px;background:#fff;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.plan:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(11,31,92,.10)}
+.plan.feature{border:2px solid var(--blue);box-shadow:0 18px 44px rgba(31,91,255,.18)}
+.tag{display:inline-block;align-self:flex-start;background:var(--light);color:var(--blue-dark);font-weight:600;font-size:.78rem;padding:4px 10px;border-radius:999px;margin-bottom:12px}
+.feature .tag{background:var(--blue);color:#fff}
+.price{font-family:Poppins,sans-serif;font-size:2.1rem;color:var(--deep);font-weight:700;margin:6px 0 0;white-space:nowrap}
+.unit{color:var(--muted);font-size:.88rem;font-weight:500;margin:0 0 12px}
+.plan .for{color:var(--muted);margin:0 0 16px;font-size:.93rem}
 .plan ul{padding:0;margin:0 0 24px;list-style:none;flex:1}
-.plan li{padding:6px 0 6px 26px;position:relative;color:var(--ink);font-size:.95rem}
+.plan li{padding:6px 0 6px 26px;position:relative;font-size:.93rem}
 .plan li::before{content:"";position:absolute;left:4px;top:13px;width:10px;height:6px;border-left:2px solid var(--blue);border-bottom:2px solid var(--blue);transform:rotate(-45deg)}
-.plan .btn{text-align:center}
-.note{color:var(--muted);font-size:.9rem;margin-top:24px}
-.work{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.work .card h3{display:flex;gap:10px;align-items:center}
-.metric{display:block;font-family:Poppins,sans-serif;color:var(--blue-dark);font-size:.85rem;font-weight:600;margin-bottom:8px;text-transform:uppercase;letter-spacing:.06em}
-.founder{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;border:1px solid var(--line);border-radius:20px;padding:36px;background:#fff}
+.plan .btn{width:100%}
+.paybox{margin-top:28px;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;border:1px dashed #C7D7FF;background:#fff;border-radius:18px;padding:22px 26px}
+.paybox p{margin:0;color:var(--muted)}
+.paybox b{color:var(--deep)}
+.note{color:var(--muted);font-size:.88rem;margin-top:18px}
+.founder{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;border:1px solid var(--line);border-radius:24px;padding:40px;background:linear-gradient(135deg,#fff,#F3F7FF)}
 .founder p{color:var(--muted);margin:0 0 12px}
-details{border:1px solid var(--line);border-radius:14px;padding:18px 22px;background:#fff;margin-bottom:12px}
+.values{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:28px}
+.value{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff}
+.value b{display:block;color:var(--deep);font-family:Poppins,sans-serif;font-size:.98rem;margin-bottom:4px}
+.value span{color:var(--muted);font-size:.88rem}
+.faq{max-width:860px}
+details{border:1px solid var(--line);border-radius:14px;padding:18px 22px;background:#fff;margin-bottom:12px;transition:box-shadow .2s}
+details[open]{box-shadow:0 10px 28px rgba(11,31,92,.07)}
 summary{cursor:pointer;font-weight:600;color:var(--deep);list-style:none}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+";float:right;color:var(--blue);font-size:1.3rem;line-height:1}
-details[open] summary::after{content:"\2013"}
+summary::after{content:"+";float:right;color:var(--blue);font-size:1.3rem;line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
 details p{color:var(--muted);margin:12px 0 0}
-.fits{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
-.fits span{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 16px;font-weight:500;color:var(--deep)}
-@media (max-width:820px){.founder{grid-template-columns:1fr}}
-@media (max-width:820px){
- .hero-grid{grid-template-columns:1fr}
- .hero-mark{display:none}
+.contact{background:radial-gradient(600px 300px at 90% 0%,#2A56D8 0,transparent 60%),var(--deep);color:#fff;border-radius:28px;padding:60px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.contact h2{color:#fff}
+.contact p{color:#C9D6FF;margin:0 0 20px}
+.contact .eyebrow{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff}
+.form{background:#fff;border-radius:20px;padding:26px;color:var(--ink)}
+.form label{display:block;font-weight:600;font-size:.88rem;color:var(--deep);margin:0 0 6px}
+.form input,.form select,.form textarea{width:100%;font:inherit;border:1px solid var(--line);border-radius:10px;padding:11px 12px;margin-bottom:14px;background:#FAFBFF}
+.form input:focus,.form select:focus,.form textarea:focus{outline:2px solid var(--blue);border-color:var(--blue);background:#fff}
+.form .btn{width:100%}
+.form small{display:block;color:var(--muted);margin-top:10px;font-size:.8rem;text-align:center}
+footer{padding:44px 0;color:var(--muted);font-size:.93rem;border-top:1px solid var(--line)}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+.foot a{text-decoration:none}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media (max-width:1000px){
+ .hero-grid,.work,.contact{grid-template-columns:1fr}
+ .flow{max-width:440px;margin:24px auto 0}
+ .grid,.price-grid,.stats,.ops,.steps,.values{grid-template-columns:repeat(2,1fr)}
  nav ul{display:none}
- .contact{padding:36px}
- section{padding:64px 0}
+}
+@media (max-width:620px){
+ .grid,.price-grid,.stats,.ops,.steps,.values{grid-template-columns:1fr}
+ .founder,.paybox{grid-template-columns:1fr}
+ .contact{padding:32px 22px}
+ section{padding:68px 0}
+ .node{font-size:.74rem;padding:8px 9px;gap:7px}.node .ic{width:26px;height:26px}.node small{font-size:.68rem}
+ .core{width:110px;height:110px}.core svg{width:64px;height:64px}
+ .nav .btn{padding:9px 14px;min-height:40px;font-size:.9rem}
+ .brand{font-size:19px}
 }
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"DigiClick AI L.L.C.","url":"https://digiclickai.github.io/","email":"digiclickai@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Boulder","addressRegion":"CO","addressCountry":"US"},"areaServed":["US","AE"],"sameAs":["https://www.linkedin.com/company/digiclick-ai/","https://www.instagram.com/digiclickai/"],"makesOffer":[{"@type":"Offer","name":"Automation Audit","price":"350","priceCurrency":"USD"},{"@type":"Offer","name":"Starter Workflow","price":"1200","priceCurrency":"USD"},{"@type":"Offer","name":"Operations System","price":"4500","priceCurrency":"USD"}]}</script>
 </head>
 <body>
-<header>
+<header id="hdr">
  <div class="wrap nav">
   <a class="brand" href="#top" aria-label="DigiClick AI home">
    <svg width="36" height="36" viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="28" fill="#EAF1FF"/><path d="M86.8 39.1 A34 34 0 1 0 88.8 78.0" fill="none" stroke="#1F5BFF" stroke-width="11" stroke-linecap="round"/><path d="M95.0 30.1 L94.8 49.3 L76.1 44.9 Z" fill="#1F5BFF" stroke="#1F5BFF" stroke-width="2.5" stroke-linejoin="round"/><circle cx="60" cy="60" r="10" fill="#0B1F5C"/></svg>
    DigiClick <span class="pill">AI</span>
   </a>
-  <nav aria-label="Main"><ul><li><a href="#services">Services</a></li><li><a href="#work">Our systems</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></nav>
-  <a class="btn" href="mailto:digiclickai@gmail.com?subject=Project%20inquiry">Get in touch</a>
+  <nav aria-label="Main"><ul><li><a href="#services">Services</a></li><li><a href="#work">Work</a></li><li><a href="#process">Process</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
+  <a class="btn" href="#contact">Start a project</a>
  </div>
 </header>
 
@@ -110,139 +196,219 @@ details p{color:var(--muted);margin:12px 0 0}
 <div class="hero">
  <div class="wrap hero-grid">
   <div>
-   <h1>Stop doing the work a workflow should do.</h1>
-   <p class="lead">DigiClick AI connects the tools you already use and automates the work in between: lead intake, follow-ups, CRM updates, order tracking and reporting. Fixed price, written scope, and you own everything we build.</p>
+   <span class="eyebrow"><i></i> Booking projects for Q1 2027</span>
+   <h1>Stop doing the work a <span class="grad">workflow</span> should do.</h1>
+   <p class="lead">DigiClick AI designs and builds automation, AI agents, websites and full platforms for growing businesses. Every project has a fixed price and a written scope, and everything we build is yours.</p>
    <div class="ctas">
-    <a class="btn" href="mailto:digiclickai@gmail.com?subject=Project%20inquiry">Tell us about your project</a>
-    <a class="btn ghost" href="#pricing">See pricing</a>
+    <a class="btn" href="#contact" data-plan="Automation Audit">Book an Automation Audit</a>
+    <a class="btn ghost" href="#work">See our work</a>
    </div>
-   <div class="proof"><span>Run in our own businesses first</span><span>Prices published up front</span><span>You own every account</span></div>
+   <div class="proof">
+    <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Prices published up front</span>
+    <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>You own every account</span>
+    <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Run in our own businesses first</span>
+   </div>
   </div>
-  <div class="hero-mark">
-   <svg width="300" height="300" viewBox="0 0 120 120" role="img" aria-label="DigiClick AI logo"><rect width="120" height="120" rx="28" fill="#EAF1FF"/><path d="M86.8 39.1 A34 34 0 1 0 88.8 78.0" fill="none" stroke="#1F5BFF" stroke-width="11" stroke-linecap="round"/><path d="M95.0 30.1 L94.8 49.3 L76.1 44.9 Z" fill="#1F5BFF" stroke="#1F5BFF" stroke-width="2.5" stroke-linejoin="round"/><circle cx="60" cy="60" r="10" fill="#0B1F5C"/></svg>
+  <div class="flow" aria-hidden="true">
+   <svg class="lines" viewBox="0 0 520 520" fill="none">
+    <path class="dash" d="M120 70 C 200 90, 220 200, 260 260" stroke="#1F5BFF" stroke-width="2.5"/>
+    <path class="dash" d="M420 130 C 360 160, 320 210, 260 260" stroke="#5B8CFF" stroke-width="2.5"/>
+    <path class="dash" d="M260 260 C 220 320, 160 360, 110 410" stroke="#1F5BFF" stroke-width="2.5"/>
+    <path class="dash" d="M260 260 C 320 330, 370 420, 420 470" stroke="#5B8CFF" stroke-width="2.5"/>
+   </svg>
+   <div class="node n1"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span>New inquiry<small>email · form · chat</small></span></div>
+   <div class="node n2"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg></span><span>AI sorts &amp; drafts<small>reply ready for approval</small></span></div>
+   <div class="core"><svg width="88" height="88" viewBox="0 0 120 120"><path d="M86.8 39.1 A34 34 0 1 0 88.8 78.0" fill="none" stroke="#1F5BFF" stroke-width="11" stroke-linecap="round"/><path d="M95.0 30.1 L94.8 49.3 L76.1 44.9 Z" fill="#1F5BFF" stroke="#1F5BFF" stroke-width="2.5" stroke-linejoin="round"/><circle cx="60" cy="60" r="10" fill="#0B1F5C"/></svg></div>
+   <div class="node n3"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M17 11h4M19 9v4"/></svg></span><span>CRM updated<small>deal, owner, next step</small></span></div>
+   <div class="node n4"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></span><span>Team alerted<small>only when a human is needed</small></span></div>
+   <div class="status"><i></i> Workflow running · 24/7</div>
   </div>
+ </div>
+</div>
+
+<div class="marquee" aria-label="Tools we build with">
+ <p>Built with the tools you already use</p>
+ <div class="track">
+  <span>n8n</span><span>Zapier</span><span>Make</span><span>Notion</span><span>HubSpot</span><span>Google Workspace</span><span>WooCommerce</span><span>Shopify</span><span>Stripe</span><span>OpenAI</span><span>Claude</span><span>Supabase</span><span>PostgreSQL</span><span>WordPress</span><span>Klaviyo</span><span>tawk.to</span>
+  <span aria-hidden="true">n8n</span><span aria-hidden="true">Zapier</span><span aria-hidden="true">Make</span><span aria-hidden="true">Notion</span><span aria-hidden="true">HubSpot</span><span aria-hidden="true">Google Workspace</span><span aria-hidden="true">WooCommerce</span><span aria-hidden="true">Shopify</span><span aria-hidden="true">Stripe</span><span aria-hidden="true">OpenAI</span><span aria-hidden="true">Claude</span><span aria-hidden="true">Supabase</span><span aria-hidden="true">PostgreSQL</span><span aria-hidden="true">WordPress</span><span aria-hidden="true">Klaviyo</span><span aria-hidden="true">tawk.to</span>
  </div>
 </div>
 
 <section id="services">
  <div class="wrap">
-  <h2>What we do</h2>
-  <p class="sub">Practical, scoped projects for small and growing teams. No bloated retainers.</p>
+  <span class="eyebrow reveal"><i></i> What we do</span>
+  <h2 class="reveal">From one workflow to a whole platform</h2>
+  <p class="sub reveal">Start with the process that hurts most. Grow into a system that runs the business. Same team, same standards, every step.</p>
   <div class="grid">
-   <div class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></div><h3>Workflow automation</h3><p>Turn repeated manual steps into flows that run on their own, with alerts when something needs a human.</p></div>
-   <div class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M17 11h4M19 9v4"/></svg></div><h3>CRM setup & integrations</h3><p>Get leads, contacts and deals into one place automatically, and keep them up to date.</p></div>
-   <div class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg></div><h3>AI-assisted processes</h3><p>Use AI where it actually helps: sorting inquiries, drafting replies, summarizing and reporting.</p></div>
-   <div class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div><h3>Software & API integrations</h3><p>Connect apps that don't talk to each other, so data moves without copy and paste.</p></div>
-   <div class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg></div><h3>Selective web development</h3><p>Focused sites and pages when a project needs one, built to connect with the rest of your stack.</p></div>
+   <div class="card reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></div><h3>Workflow automation</h3><p>Repeated manual steps become flows that run on their own.</p><ul><li>Lead intake &amp; follow-ups</li><li>Order, job &amp; claim tracking</li><li>Scheduled reports</li></ul></div>
+   <div class="card reveal d1"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg></div><h3>AI agents &amp; chatbots</h3><p>Assistants trained on your own knowledge base, with a human in the loop.</p><ul><li>Website live chat that answers 24/7</li><li>Inbox sorting &amp; drafted replies</li><li>Internal "ask the business" agents</li></ul></div>
+   <div class="card reveal d2"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M17 11h4M19 9v4"/></svg></div><h3>CRM &amp; email systems</h3><p>One clean source of truth for contacts, deals and customer email.</p><ul><li>HubSpot or Notion CRM setup</li><li>Branded transactional emails</li><li>Campaign &amp; nurture flows</li></ul></div>
+   <div class="card reveal"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg></div><h3>Websites &amp; e-commerce</h3><p>Fast, conversion-focused sites and stores wired into your operations.</p><ul><li>WooCommerce &amp; Shopify stores</li><li>Supplier &amp; inventory sync</li><li>Marketplace integrations</li></ul></div>
+   <div class="card reveal d1"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div><h3>SaaS &amp; custom platforms</h3><p>When off-the-shelf stops fitting, we build the software itself.</p><ul><li>Portals, dashboards &amp; APIs</li><li>Subscriptions &amp; payments</li><li>Secure hosting &amp; deploys</li></ul></div>
+   <div class="card reveal d2"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-6"/></svg></div><h3>Brand &amp; business development</h3><p>The presence that makes buyers trust you before the first call.</p><ul><li>Logo, colors &amp; brand kit</li><li>LinkedIn &amp; Instagram setup</li><li>Pricing pages &amp; sales collateral</li></ul></div>
   </div>
-  <h3 style="margin-top:48px">Built for teams like</h3>
-  <div class="fits"><span>Repair & field service</span><span>E-commerce & wholesale</span><span>Agencies & consultants</span><span>Local service businesses</span><span>Logistics & dispatch</span></div>
  </div>
 </section>
 
-<section id="work" class="alt">
+<section id="work" class="dark">
  <div class="wrap">
-  <h2>Systems we run every day</h2>
-  <p class="sub">We build and run automation inside our own operating companies (device repair, wholesale parts and trading across the US and UAE) before we offer it to anyone else. These are live, not demos.</p>
+  <span class="eyebrow reveal"><i></i> Selected work</span>
+  <h2 class="reveal">Platforms we've built and run</h2>
+  <p class="sub reveal">We build for our own operating companies first, across device repair, wholesale parts and B2B trading in the US and the UAE. These are live businesses, not demos.</p>
   <div class="work">
-   <div class="card"><span class="metric">Operations</span><h3>Multi-region job tracking</h3><p>Repair and claim jobs across five regions flow into one tracker, with status changes, owners and deadlines updated automatically.</p></div>
-   <div class="card"><span class="metric">Monitoring</span><h3>24/7 business watchdog</h3><p>Scheduled checks watch orders, inboxes and systems around the clock and push an alert to the team chat the moment something needs a human.</p></div>
-   <div class="card"><span class="metric">Sales</span><h3>Lead intake & follow-up</h3><p>Inquiries from email, web forms and messaging land in one queue, get sorted, and come with a drafted reply ready for approval.</p></div>
-   <div class="card"><span class="metric">E-commerce</span><h3>Supplier catalog sync</h3><p>Supplier feeds keep product listings, stock and pricing current on a schedule instead of by hand.</p></div>
+   <article class="case reveal">
+    <div class="shot"><div class="bar"><i></i><i></i><i></i><em>midastechnicalsolutions.com</em></div><img src="work-midas.jpg" alt="Midas Technical Solutions wholesale parts storefront" loading="lazy"></div>
+    <div class="body">
+     <h3>Midas Technical Solutions</h3>
+     <div class="tags"><span>E-commerce</span><span>Supplier API sync</span><span>AI live chat</span><span>Marketplaces</span></div>
+     <p>A wholesale phone-repair parts store with automated supplier catalog sync (cost, stock and photos on a schedule), an AI live-chat agent trained on store policies, branded order emails, and Walmart Marketplace integration.</p>
+     <a href="https://midastechnicalsolutions.com" target="_blank" rel="noopener">Visit the live site →</a>
+    </div>
+   </article>
+   <article class="case reveal d1">
+    <div class="shot"><div class="bar"><i></i><i></i><i></i><em>nexustechhubhq.com</em></div><img src="work-nexus.jpg" alt="Nexus Tech Hub trade platform" loading="lazy"></div>
+    <div class="body">
+     <h3>Nexus Tech Hub</h3>
+     <div class="tags"><span>SaaS platform</span><span>Payments</span><span>AI assistant</span><span>Subscriptions</span></div>
+     <p>A B2B trade platform for device wholesalers: buyer and supplier workspaces, deal matching, built-in payments with subscription billing, and an AI assistant that answers questions about the business's own data.</p>
+     <a href="https://nexustechhubhq.com" target="_blank" rel="noopener">Visit the live site →</a>
+    </div>
+   </article>
+  </div>
+  <div class="ops">
+   <div class="op reveal"><span class="metric">Operations</span><h3>Multi-region job tracking</h3><p>Jobs and claims across five regions in one tracker, updated automatically.</p></div>
+   <div class="op reveal d1"><span class="metric">Monitoring</span><h3>24/7 business watchdog</h3><p>Checks orders, inboxes and systems around the clock and alerts the team chat.</p></div>
+   <div class="op reveal d2"><span class="metric">Sales</span><h3>Lead intake &amp; follow-up</h3><p>Email, forms and messaging land in one queue with drafted replies.</p></div>
+   <div class="op reveal d3"><span class="metric">Finance</span><h3>Order &amp; payout reporting</h3><p>Daily order pulls and revenue summaries without opening five dashboards.</p></div>
   </div>
  </div>
 </section>
 
-<section id="process">
+<section>
  <div class="wrap">
-  <h2>How we work</h2>
-  <p class="sub">Every project is scoped up front, so you know exactly what you're getting and what it costs.</p>
+  <div class="stats">
+   <div class="stat reveal"><b>2</b><span>live platforms built and operated</span></div>
+   <div class="stat reveal d1"><b>5</b><span>regions tracked in one system</span></div>
+   <div class="stat reveal d2"><b>24/7</b><span>automated monitoring and alerts</span></div>
+   <div class="stat reveal d3"><b>US + UAE</b><span>where we build and operate</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="process" class="alt">
+ <div class="wrap">
+  <span class="eyebrow reveal"><i></i> How we work</span>
+  <h2 class="reveal">No surprises, from first call to handoff</h2>
+  <p class="sub reveal">Every project is scoped up front, so you know exactly what you're getting, when, and what it costs.</p>
   <ol class="steps">
-   <li><h3>Discovery</h3><p>A short call to understand your tools, your bottlenecks and what "done" looks like.</p></li>
-   <li><h3>Written scope</h3><p>Clear deliverables, timeline, price and acceptance tests, agreed before work starts.</p></li>
-   <li><h3>Build & test</h3><p>Built in your own accounts with least-privilege access, tested before anything goes live.</p></li>
-   <li><h3>Handoff</h3><p>You sign off against the acceptance tests and get documentation for what was built.</p></li>
+   <li class="reveal"><h3>Audit</h3><p>We map your tools and manual steps and rank what to automate by hours saved.</p><small>Week 1</small></li>
+   <li class="reveal d1"><h3>Written scope</h3><p>Deliverables, timeline, fixed price and acceptance checks, agreed before work starts.</p><small>Within 3 days</small></li>
+   <li class="reveal d2"><h3>Build &amp; test</h3><p>Built in your own accounts with least-privilege access, tested before anything goes live.</p><small>1–5 weeks</small></li>
+   <li class="reveal d3"><h3>Handoff &amp; care</h3><p>You sign off against the checks, get documentation, and can add a Care Plan.</p><small>Ongoing</small></li>
   </ol>
  </div>
 </section>
 
-
-<section id="pricing" class="alt">
+<section id="pricing">
  <div class="wrap">
-  <h2>Simple, published pricing</h2>
-  <p class="sub">Every project starts with a written scope and a fixed price. Nothing is billed until you approve it.</p>
+  <span class="eyebrow reveal"><i></i> Pricing</span>
+  <h2 class="reveal">Simple, published pricing</h2>
+  <p class="sub reveal">Every project starts with a written scope and a fixed price. Nothing is billed until you approve it.</p>
   <div class="price-grid">
-   <div class="plan">
+   <div class="plan reveal">
     <span class="tag">Start here</span>
     <h3>Automation Audit</h3>
     <div class="price">$350</div><div class="unit">one-time</div>
     <p class="for">For teams who know they're losing hours but not where.</p>
     <ul><li>60-minute working session</li><li>Map of your tools and manual steps</li><li>Top 5 automations ranked by hours saved</li><li>Written plan with fixed quotes</li><li>Fee credited to any build within 30 days</li></ul>
-    <a class="btn ghost" href="mailto:digiclickai@gmail.com?subject=Automation%20Audit">Book an audit</a>
+    <a class="btn ghost" href="#contact" data-plan="Automation Audit">Book an audit</a>
    </div>
-   <div class="plan">
+   <div class="plan reveal d1">
     <span class="tag">1–2 weeks</span>
     <h3>Starter Workflow</h3>
     <div class="price">$1,200</div><div class="unit">starting price</div>
     <p class="for">One painful process, automated end to end.</p>
-    <ul><li>1 production workflow</li><li>Up to 3 connected tools</li><li>AI step where it helps (sorting, drafting, summaries)</li><li>Tested against agreed acceptance checks</li><li>Documentation + 30 days of support</li></ul>
-    <a class="btn ghost" href="mailto:digiclickai@gmail.com?subject=Starter%20Workflow">Start a project</a>
+    <ul><li>1 production workflow</li><li>Up to 3 connected tools</li><li>AI step where it helps</li><li>Tested against agreed acceptance checks</li><li>Documentation + 30 days of support</li></ul>
+    <a class="btn ghost" href="#contact" data-plan="Starter Workflow">Start a project</a>
    </div>
-   <div class="plan feature">
+   <div class="plan feature reveal d2">
     <span class="tag">Best value</span>
     <h3>Operations System</h3>
     <div class="price">$4,500</div><div class="unit">starting price</div>
     <p class="for">Run the core of the business on autopilot.</p>
-    <ul><li>3–6 connected workflows</li><li>CRM or tracker setup with a live dashboard</li><li>AI agents for intake, replies and reporting</li><li>Alerts when something needs a human</li><li>Team walkthrough + 60 days of support</li></ul>
-    <a class="btn" href="mailto:digiclickai@gmail.com?subject=Operations%20System">Plan my system</a>
+    <ul><li>3–6 connected workflows</li><li>CRM or tracker with a live dashboard</li><li>AI agents for intake, replies and reporting</li><li>Alerts when a human is needed</li><li>Team walkthrough + 60 days of support</li></ul>
+    <a class="btn" href="#contact" data-plan="Operations System">Plan my system</a>
    </div>
-   <div class="plan">
+   <div class="plan reveal d3">
     <span class="tag">Ongoing</span>
     <h3>Care Plan</h3>
     <div class="price">$450</div><div class="unit">per month, starting price</div>
     <p class="for">Keep everything running and improving.</p>
     <ul><li>Monitoring and fixes</li><li>Up to 4 hours of changes each month</li><li>Monthly report: runs, errors, hours saved</li><li>Priority email support</li><li>Cancel any month</li></ul>
-    <a class="btn ghost" href="mailto:digiclickai@gmail.com?subject=Care%20Plan">Ask about care</a>
+    <a class="btn ghost" href="#contact" data-plan="Care Plan">Ask about care</a>
    </div>
   </div>
-  <p class="note">Prices in USD. Software subscriptions (for example n8n, Zapier, Make or your CRM) are billed directly to your own accounts, so you keep full ownership. Larger or custom builds are quoted after the audit.</p>
+  <div class="paybox reveal">
+   <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
+   <p><b>How payment works:</b> once you approve the written scope, we send an invoice from DigiClick AI L.L.C. Builds are 50% to start and 50% at sign-off; audits and Care Plans are paid up front. Invoices are payable by bank transfer (ACH or international wire).</p>
+  </div>
+  <p class="note">Prices in USD. Websites, custom platforms and larger builds are quoted after the audit. Software subscriptions (for example n8n, Zapier, Make or your CRM) are billed to your own accounts, so you keep full ownership.</p>
  </div>
 </section>
 
-<section id="about">
+<section id="about" class="alt">
  <div class="wrap">
-  <div class="founder">
-   <svg width="96" height="96" viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="28" fill="#EAF1FF"/><path d="M86.8 39.1 A34 34 0 1 0 88.8 78.0" fill="none" stroke="#1F5BFF" stroke-width="11" stroke-linecap="round"/><path d="M95.0 30.1 L94.8 49.3 L76.1 44.9 Z" fill="#1F5BFF" stroke="#1F5BFF" stroke-width="2.5" stroke-linejoin="round"/><circle cx="60" cy="60" r="10" fill="#0B1F5C"/></svg>
+  <div class="founder reveal">
+   <svg width="104" height="104" viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="28" fill="#EAF1FF"/><path d="M86.8 39.1 A34 34 0 1 0 88.8 78.0" fill="none" stroke="#1F5BFF" stroke-width="11" stroke-linecap="round"/><path d="M95.0 30.1 L94.8 49.3 L76.1 44.9 Z" fill="#1F5BFF" stroke="#1F5BFF" stroke-width="2.5" stroke-linejoin="round"/><circle cx="60" cy="60" r="10" fill="#0B1F5C"/></svg>
    <div>
-    <h2>Founder-led, engineer-built</h2>
-    <p>DigiClick AI is a Colorado company run by a software and DevOps engineer who builds and operates automation for businesses in the US and the UAE. You work directly with the person building your system: no account managers, no outsourcing.</p>
-    <p>We keep a small number of projects at a time so each one gets finished properly. <a href="https://www.linkedin.com/company/digiclick-ai/">Follow us on LinkedIn</a>.</p>
+    <h2>Engineer-led, operator-tested</h2>
+    <p>DigiClick AI is a Colorado company led by a software and DevOps engineer who builds and operates automation for businesses in the US and the UAE. You work directly with the engineer building your system: no account managers, no outsourcing.</p>
+    <p>We keep a small number of projects at a time so each one is finished properly. <a href="https://www.linkedin.com/company/digiclick-ai/" target="_blank" rel="noopener">Follow us on LinkedIn</a>.</p>
    </div>
+  </div>
+  <div class="values">
+   <div class="value reveal"><b>Published prices</b><span>Written scope before any work.</span></div>
+   <div class="value reveal d1"><b>You own it</b><span>Your accounts, your logins, your data.</span></div>
+   <div class="value reveal d2"><b>Proven in-house</b><span>We run it ourselves first.</span></div>
+   <div class="value reveal d3"><b>Human in the loop</b><span>AI drafts, people decide.</span></div>
+   <div class="value reveal"><b>Plain English</b><span>No hype, no jargon.</span></div>
   </div>
  </div>
 </section>
 
-<section id="faq" class="alt">
- <div class="wrap">
-  <h2>Questions people ask</h2>
-  <p class="sub">Straight answers before you reach out.</p>
+<section id="faq">
+ <div class="wrap faq">
+  <span class="eyebrow reveal"><i></i> FAQ</span>
+  <h2 class="reveal">Questions people ask</h2>
+  <p class="sub reveal">Straight answers before you reach out.</p>
   <details><summary>Do I own what you build?</summary><p>Yes. Everything is built in your own accounts, with your logins, and documented. If we stop working together, it keeps running.</p></details>
-  <details><summary>Which tools do you work with?</summary><p>n8n, Zapier and Make for workflows; Notion, Airtable, HubSpot and Google Workspace for data; WooCommerce, Shopify and Stripe for commerce; OpenAI and Claude for the AI steps; plus custom APIs when an app has no built-in connector.</p></details>
+  <details><summary>Which tools do you work with?</summary><p>n8n, Zapier and Make for workflows; Notion, HubSpot and Google Workspace for data; WooCommerce, Shopify and Stripe for commerce; OpenAI and Claude for the AI steps; plus custom APIs and full custom builds when an app doesn't fit.</p></details>
+  <details><summary>Can you build a whole website or platform, not just automations?</summary><p>Yes. We build e-commerce stores, client portals, dashboards and full SaaS platforms, and we run two of our own. These are quoted after an audit.</p></details>
   <details><summary>How fast can you start?</summary><p>Audits are usually booked within a week. Builds start once the written scope is approved.</p></details>
-  <details><summary>How does payment work?</summary><p>50% to start and 50% when you sign off against the acceptance checks. Care Plans are billed monthly and can be cancelled any month.</p></details>
+  <details><summary>How do I pay?</summary><p>You receive an invoice from DigiClick AI L.L.C. after approving the scope. Builds are 50% up front and 50% at sign-off; audits and Care Plans are paid up front. Bank transfer (ACH or international wire) is accepted.</p></details>
   <details><summary>Do you work outside the US?</summary><p>Yes. We work remotely with businesses in the US, the UAE and elsewhere, in English.</p></details>
   <details><summary>Is my data safe?</summary><p>We use least-privilege access, never store your passwords, and remove our access at handoff unless you're on a Care Plan. We're happy to sign your NDA.</p></details>
  </div>
 </section>
 
-<section id="contact">
+<section id="contact" style="padding-top:20px">
  <div class="wrap">
-  <div class="contact">
+  <div class="contact reveal">
    <div>
+    <span class="eyebrow"><i></i> Reply within 2 business days</span>
     <h2>Have a process that eats your week?</h2>
-    <p>Tell us what you're doing by hand today. We take on a limited number of projects at a time and reply within two business days.</p>
+    <p>Tell us what you're doing by hand today. We'll come back with whether it's worth automating, which package fits, and a fixed price.</p>
+    <p style="margin:0">Prefer email? <a href="mailto:digiclickai@gmail.com" style="color:#fff;font-weight:600">digiclickai@gmail.com</a></p>
    </div>
-   <a class="btn" href="mailto:digiclickai@gmail.com?subject=Project%20inquiry&body=Business%20name%3A%0AWhat%20you%20do%20by%20hand%20today%3A%0ATools%20you%20use%3A%0ATimeline%3A">Email digiclickai@gmail.com</a>
+   <form class="form" id="lead" novalidate>
+    <label for="f-name">Name</label><input id="f-name" name="name" required autocomplete="name">
+    <label for="f-co">Company</label><input id="f-co" name="company" autocomplete="organization">
+    <label for="f-plan">Interested in</label>
+    <select id="f-plan" name="plan"><option>Automation Audit</option><option>Starter Workflow</option><option>Operations System</option><option>Care Plan</option><option>Website or platform build</option><option>Not sure yet</option></select>
+    <label for="f-msg">What do you do by hand today?</label><textarea id="f-msg" name="msg" rows="3" required></textarea>
+    <button class="btn" type="submit">Send inquiry</button>
+    <small>Opens your email app with your details filled in, addressed to digiclickai@gmail.com.</small>
+   </form>
   </div>
  </div>
 </section>
@@ -251,8 +417,30 @@ details p{color:var(--muted);margin:12px 0 0}
 <footer>
  <div class="wrap foot">
   <span>© 2026 DigiClick AI L.L.C. · Boulder, Colorado</span>
-  <span><a href="https://www.linkedin.com/company/digiclick-ai/">LinkedIn</a> · <a href="https://www.instagram.com/digiclickai/">Instagram</a> · <a href="mailto:digiclickai@gmail.com">Email</a></span>
+  <span><a href="https://www.linkedin.com/company/digiclick-ai/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.instagram.com/digiclickai/" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:digiclickai@gmail.com">Email</a></span>
  </div>
 </footer>
+
+<script>
+(function(){
+ var h=document.getElementById('hdr');
+ addEventListener('scroll',function(){h.classList.toggle('scrolled',scrollY>8)},{passive:true});
+ var els=document.querySelectorAll('.reveal');
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(el){io.observe(el)});
+ } else els.forEach(function(el){el.classList.add('in')});
+ document.querySelectorAll('[data-plan]').forEach(function(a){a.addEventListener('click',function(){document.getElementById('f-plan').value=a.getAttribute('data-plan')})});
+ document.getElementById('lead').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var f=ev.target,n=f.elements.name.value.trim(),m=f.elements.msg.value.trim();
+  if(!n){f.elements.name.focus();return}
+  if(!m){f.elements.msg.focus();return}
+  var subj='Project inquiry: '+f.elements.plan.value+(f.elements.company.value?' — '+f.elements.company.value:'');
+  var body='Name: '+n+'\nCompany: '+f.elements.company.value+'\nInterested in: '+f.elements.plan.value+'\n\nWhat we do by hand today:\n'+m;
+  location.href='mailto:digiclickai@gmail.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+ });
+})();
+</script>
 </body>
 </html>
