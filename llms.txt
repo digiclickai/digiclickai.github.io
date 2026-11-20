@@ -27,3 +27,7 @@
 - Email: digiclickai@gmail.com
 - LinkedIn: https://www.linkedin.com/company/digiclick-ai/
 - Instagram: https://www.instagram.com/digiclickai/
+
+## Portfolio
+- All work: https://digiclickai.github.io/work/
+- Dare — social challenge mobile app (client project; iOS & Android UX, wireframes, back-end architecture): https://digiclickai.github.io/work/dare.html
