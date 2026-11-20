@@ -12,6 +12,13 @@
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Google tag (GA4) -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KW5C7RM7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
 <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -104,5 +111,19 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;s1.src='https://embed.tawk.to/6affb40001b60a3cc4c5d431/1k7rde8mf';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);})();
 </script>
 <!--End of Tawk.to Script-->
+<script>
+/* GA4 lead tracking */
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a,button'); if(!a||typeof gtag!=='function') return;
+  var h=(a.getAttribute('href')||'');
+  if(h.indexOf('mailto:')===0) gtag('event','contact_email',{link_url:h});
+  else if(/linkedin|instagram/.test(h)) gtag('event','social_click',{link_url:h});
+  else if(a.dataset.plan) gtag('event','select_package',{package:a.dataset.plan});
+  else if(/discovery|book a call|get a quote/i.test(a.textContent)) gtag('event','cta_click',{label:a.textContent.trim().slice(0,60)});
+});
+document.addEventListener('submit',function(e){
+  if(typeof gtag==='function') gtag('event','generate_lead',{form_id:e.target.id||'lead',method:'contact_form'});
+},true);
+</script>
 </body>
 </html>
