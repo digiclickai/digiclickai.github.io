@@ -11,7 +11,8 @@
 - Brand and business development: logo and brand kit, LinkedIn and Instagram setup, pricing pages
 
 ## Pricing (USD)
-- Automation Audit: $350 one-time (credited toward any build within 30 days)
+- Every project is custom-quoted after a free 20-minute discovery call. Typical starting points:
+- Automation Audit: $350 (credited toward any build within 30 days)
 - Starter Workflow: from $1,200 (1 workflow, up to 3 tools, 1–2 weeks)
 - Operations System: from $4,500 (3–6 workflows, CRM/dashboard, AI agents, 3–5 weeks)
 - Care Plan: from $450/month (monitoring, fixes, up to 4 hours of changes, cancel any month)
