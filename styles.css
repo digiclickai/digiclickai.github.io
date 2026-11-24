@@ -235,3 +235,9 @@ footer{padding:44px 0;color:var(--muted);font-size:.93rem;border-top:1px solid v
 .phones figcaption{font-weight:600;color:var(--deep);font-size:.9rem;margin-top:8px}
 @media(max-width:900px){.pgrid,.wteaser{grid-template-columns:1fr}.layer{grid-template-columns:1fr;gap:8px}.down{margin-left:0}}
 .dark .pcard h3{color:var(--deep)}.dark .pcard p{color:var(--muted)}
+.form .row2{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+@media(max-width:560px){.form .row2{grid-template-columns:1fr}}
+.form .fmsg{margin:10px 0 0;font-size:.88rem;font-weight:600;text-align:center;min-height:0}
+.form .fmsg.ok{color:#0E7A3D}.form .fmsg.err{color:#B42318}
+.form .fmsg a{color:inherit;text-decoration:underline}
+.form .btn[disabled]{opacity:.7;cursor:default}

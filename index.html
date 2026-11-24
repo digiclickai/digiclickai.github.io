@@ -141,7 +141,6 @@
     <p class="for">For teams who know they're losing hours but not where.</p>
     <ul><li>60-minute working session</li><li>Map of your tools and manual steps</li><li>Top 5 automations ranked by hours saved</li><li>Written plan with fixed quotes</li><li>Fee credited to any build within 30 days</li></ul>
     <a class="btn ghost" href="#contact" data-plan="Automation Audit">Book an audit</a>
-<a class="paylink" href="https://buy.stripe.com/3cI3cx6FC0lYc7a10S3Je01" target="_blank" rel="noopener" style="display:block;margin-top:12px;text-align:center;font-size:14px;font-weight:600;color:#1F5BFF;text-decoration:none">Or pay $350 now by card &rarr;</a>
    </div>
    <div class="plan reveal d1">
     <span class="tag">1–2 weeks</span>
@@ -166,12 +165,11 @@
     <p class="for">Keep everything running and improving.</p>
     <ul><li>Monitoring and fixes</li><li>Up to 4 hours of changes each month</li><li>Monthly report: runs, errors, hours saved</li><li>Priority email support</li><li>Cancel any month</li></ul>
     <a class="btn ghost" href="#contact" data-plan="Care Plan">Ask about care</a>
-<a class="paylink" href="https://buy.stripe.com/9B63cx0heecOc7a24W3Je00" target="_blank" rel="noopener" style="display:block;margin-top:12px;text-align:center;font-size:14px;font-weight:600;color:#1F5BFF;text-decoration:none">Or subscribe for $450/month &rarr;</a>
    </div>
   </div>
   <div class="paybox reveal">
    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#1F5BFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
-   <p><b>How payment works:</b> once you approve the written scope, we send an invoice from DigiClick AI L.L.C. Builds are 50% to start and 50% at sign-off; audits and Care Plans are paid up front. Invoices are payable by card through Stripe or by bank transfer (ACH or international wire). The Automation Audit and Care Plan can also be paid online by card using the links above.</p>
+   <p><b>How payment works:</b> once you approve the written scope, we send an invoice from DigiClick AI L.L.C. Builds are 50% to start and 50% at sign-off; audits and Care Plans are paid up front. You pay through a secure Stripe link (card, Apple Pay or US bank account) or by bank transfer (ACH or international wire).</p>
   </div>
   <p class="note">Prices in USD. Websites, custom platforms and larger builds are quoted after the discovery call. Software subscriptions (for example n8n, Zapier, Make or your CRM) are billed to your own accounts, so you keep full ownership.</p>
  </div>
@@ -207,7 +205,7 @@
   <details><summary>Can you build a whole website or platform, not just automations?</summary><p>Yes. We build e-commerce stores, client portals, dashboards and full SaaS platforms, and we run two of our own. These are quoted after an audit.</p></details>
   <details><summary>How much does it cost?</summary><p>It depends on what you need, so every project gets a custom quote after a free discovery call. As a guide, single workflows usually start around $1,200, full operations systems around $4,500, and websites or platforms are quoted on scope. You see the full price in writing before anything starts.</p></details>
   <details><summary>How fast can you start?</summary><p>Audits are usually booked within a week. Builds start once the written scope is approved.</p></details>
-  <details><summary>How do I pay?</summary><p>You receive an invoice from DigiClick AI L.L.C. after approving the scope. Builds are 50% up front and 50% at sign-off; audits and Care Plans are paid up front. You can pay by card through Stripe or by bank transfer (ACH or international wire). The Automation Audit and Care Plan can also be paid online by card from the Pricing section.</p></details>
+  <details><summary>How do I pay?</summary><p>You receive an invoice from DigiClick AI L.L.C. after approving the scope. Builds are 50% up front and 50% at sign-off; audits and Care Plans are paid up front. You can pay by card, Apple Pay or US bank account through a secure Stripe link, or by ACH or international wire.</p></details>
   <details><summary>Do you work outside the US?</summary><p>Yes. We work remotely with businesses in the US, the UAE and elsewhere, in English.</p></details>
   <details><summary>Is my data safe?</summary><p>We use least-privilege access, never store your passwords, and remove our access at handoff unless you're on a Care Plan. We're happy to sign your NDA.</p></details>
  </div>
@@ -223,13 +221,18 @@
     <p style="margin:0">Prefer email? <a href="mailto:digiclickai@gmail.com" style="color:#fff;font-weight:600">digiclickai@gmail.com</a></p>
    </div>
    <form class="form" id="lead" novalidate>
-    <label for="f-name">Name</label><input id="f-name" name="name" required autocomplete="name">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+    <div class="row2"><div><label for="f-name">Name</label><input id="f-name" name="name" required autocomplete="name"></div>
+    <div><label for="f-email">Work email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div></div>
     <label for="f-co">Company</label><input id="f-co" name="company" autocomplete="organization">
     <label for="f-plan">Interested in</label>
     <select id="f-plan" name="plan"><option>Not sure yet</option><option>Automation Audit</option><option>Starter Workflow</option><option>Operations System</option><option>Care Plan</option><option>Website or platform build</option></select>
+    <div class="row2"><div><label for="f-budget">Budget</label><select id="f-budget" name="budget"><option>Not sure yet</option><option>Under $1,000</option><option>$1,000 – $3,000</option><option>$3,000 – $8,000</option><option>$8,000+</option></select></div>
+    <div><label for="f-time">Timeline</label><select id="f-time" name="timeline"><option>Flexible</option><option>As soon as possible</option><option>Within 30 days</option><option>1–3 months</option></select></div></div>
     <label for="f-msg">What do you do by hand today?</label><textarea id="f-msg" name="msg" rows="3" required></textarea>
-    <button class="btn" type="submit">Request a discovery call</button>
-    <small>Opens your email app with your details filled in. Or use the chat bubble for a quick question.</small>
+    <button class="btn" type="submit" id="f-btn">Request a discovery call</button>
+    <p class="fmsg" id="f-status" role="status" aria-live="polite"></p>
+    <small>This is an inquiry, not a booking. We reply within 2 business days with a time for a free 20-minute call.</small>
    </form>
   </div>
  </div>
@@ -269,14 +272,28 @@
  document.querySelectorAll('[data-plan]').forEach(function(a){a.addEventListener('click',function(){document.getElementById('f-plan').value=a.getAttribute('data-plan')})});
  document.getElementById('lead').addEventListener('submit',function(ev){
   ev.preventDefault();
-  var f=ev.target,n=f.elements.name.value.trim(),m=f.elements.msg.value.trim();
+  var f=ev.target,st=document.getElementById('f-status'),b=document.getElementById('f-btn');
+  var n=f.elements.name.value.trim(),em=f.elements.email.value.trim(),m=f.elements.msg.value.trim();
   if(!n){f.elements.name.focus();return}
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){st.className='fmsg err';st.textContent='Please enter a valid email so we can reply.';f.elements.email.focus();return}
   if(!m){f.elements.msg.focus();return}
-  var subj='Project inquiry: '+f.elements.plan.value+(f.elements.company.value?' — '+f.elements.company.value:'');
-  var body='Name: '+n+'\nCompany: '+f.elements.company.value+'\nInterested in: '+f.elements.plan.value+'\n\nWhat we do by hand today:\n'+m;
-  location.href='mailto:digiclickai@gmail.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
- });
-})();
+  if(f.elements._honey.value)return;
+  var data={name:n,email:em,company:f.elements.company.value,interested_in:f.elements.plan.value,budget:f.elements.budget.value,timeline:f.elements.timeline.value,message:m,
+   _subject:'New DigiClick inquiry: '+f.elements.plan.value+(f.elements.company.value?' — '+f.elements.company.value:''),_template:'table',_captcha:'false',_replyto:em};
+  b.disabled=true;b.textContent='Sending…';st.className='fmsg';st.textContent='';
+  fetch('https://formsubmit.co/ajax/digiclickai@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+  .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j}})})
+  .then(function(res){
+   if(res.ok&&String(res.j.success)==='true'){
+    st.className='fmsg ok';st.textContent='Thanks, '+n.split(' ')[0]+'. Your inquiry is in. We\'ll reply to '+em+' within 2 business days.';
+    f.reset();b.textContent='Sent';
+    if(typeof gtag==='function')gtag('event','generate_lead',{form_id:'lead',method:'contact_form',package:data.interested_in,budget:data.budget});
+   } else throw new Error('fail');
+  }).catch(function(){
+   b.disabled=false;b.textContent='Request a discovery call';
+   st.className='fmsg err';st.innerHTML='Something went wrong sending your message. Please email <a href="mailto:digiclickai@gmail.com?subject='+encodeURIComponent(data._subject)+'">digiclickai@gmail.com</a> instead.';
+  });
+ });})();
 </script>
 <!--Start of Tawk.to Script-->
 <script>
@@ -294,9 +311,6 @@ document.addEventListener('click',function(e){
   else if(a.dataset.plan) gtag('event','select_package',{package:a.dataset.plan});
   else if(/discovery|book a call|get a quote/i.test(a.textContent)) gtag('event','cta_click',{label:a.textContent.trim().slice(0,60)});
 });
-document.addEventListener('submit',function(e){
-  if(typeof gtag==='function') gtag('event','generate_lead',{form_id:e.target.id||'lead',method:'contact_form'});
-},true);
 </script>
 </body>
 </html>
