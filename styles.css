@@ -241,3 +241,9 @@ footer{padding:44px 0;color:var(--muted);font-size:.93rem;border-top:1px solid v
 .form .fmsg.ok{color:#0E7A3D}.form .fmsg.err{color:#B42318}
 .form .fmsg a{color:inherit;text-decoration:underline}
 .form .btn[disabled]{opacity:.7;cursor:default}
+.plan li.gtee{font-weight:600;color:var(--deep)}
+.gtees{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.gtees .gt{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;background:#EAF1FF;border-radius:18px;padding:20px 22px}
+.gtees .gt b{display:block;color:var(--deep);margin-bottom:4px}
+.gtees .gt p{margin:0;color:var(--muted);font-size:.95rem}
+@media(max-width:760px){.gtees{grid-template-columns:1fr}}
